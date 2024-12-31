@@ -1,0 +1,23 @@
+.project-table {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 4px;
+    margin: 1rem;
+  }
+  
+  .project-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .project-table th {
+    background-color: #2f4050;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .project-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }

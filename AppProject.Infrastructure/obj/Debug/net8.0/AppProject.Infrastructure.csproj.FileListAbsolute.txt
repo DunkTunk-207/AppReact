@@ -1,0 +1,17 @@
+D:\AppReact\AppProject.Infrastructure\bin\Debug\net8.0\AppProject.Infrastructure.deps.json
+D:\AppReact\AppProject.Infrastructure\bin\Debug\net8.0\AppProject.Infrastructure.runtimeconfig.json
+D:\AppReact\AppProject.Infrastructure\bin\Debug\net8.0\AppProject.Infrastructure.dll
+D:\AppReact\AppProject.Infrastructure\bin\Debug\net8.0\AppProject.Infrastructure.pdb
+D:\AppReact\AppProject.Infrastructure\bin\Debug\net8.0\AppProject.Core.dll
+D:\AppReact\AppProject.Infrastructure\bin\Debug\net8.0\AppProject.Core.pdb
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.csproj.AssemblyReference.cache
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.AssemblyInfoInputs.cache
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.AssemblyInfo.cs
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.csproj.CoreCompileInputs.cache
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProje.E33ECB47.Up2Date
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.dll
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\refint\AppProject.Infrastructure.dll
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.pdb
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\AppProject.Infrastructure.genruntimeconfig.cache
+D:\AppReact\AppProject.Infrastructure\obj\Debug\net8.0\ref\AppProject.Infrastructure.dll

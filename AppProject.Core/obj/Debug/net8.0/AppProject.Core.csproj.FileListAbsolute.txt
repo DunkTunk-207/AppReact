@@ -1,0 +1,11 @@
+D:\AppReact\AppProject.Core\bin\Debug\net8.0\AppProject.Core.deps.json
+D:\AppReact\AppProject.Core\bin\Debug\net8.0\AppProject.Core.dll
+D:\AppReact\AppProject.Core\bin\Debug\net8.0\AppProject.Core.pdb
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\AppProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\AppProject.Core.AssemblyInfoInputs.cache
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\AppProject.Core.AssemblyInfo.cs
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\AppProject.Core.csproj.CoreCompileInputs.cache
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\AppProject.Core.dll
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\refint\AppProject.Core.dll
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\AppProject.Core.pdb
+D:\AppReact\AppProject.Core\obj\Debug\net8.0\ref\AppProject.Core.dll
