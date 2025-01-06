@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using AppProject.Infrastructure.Entities;
+using AppProject.Infrastructure.Configurations;
 
 namespace AppProject.Infrastructure
 {
@@ -19,28 +20,9 @@ namespace AppProject.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Client>()
-             .ToTable("Clients")
-             .HasKey(c => c.Id);
-             
-             modelBuilder.Entity<User>()
-             .ToTable("Users")
-             .HasKey(c => c.Id);
-
-            modelBuilder.Entity<Project>()
-            .ToTable("Projects")
-            .HasKey(c => c.Id);
-
-            modelBuilder.Entity<Client>()
-            .HasMany(e => e.Projects)
-            .WithOne(e => e.Client)
-            .HasForeignKey(e => e.ClientId)
-            .IsRequired();
-
-            modelBuilder.Entity<Project>()
-            .HasOne(p => p.Client)
-            .WithMany(c => c.Projects)
-            .HasForeignKey(p => p.ClientId);
+            modelBuilder.ApplyConfiguration(new ClientConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new ProjectConfiguration());
         }
     }
 
