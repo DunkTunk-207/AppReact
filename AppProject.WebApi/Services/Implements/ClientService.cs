@@ -17,12 +17,16 @@ namespace AppProject.WebApi.Services.Implements
 
         public async Task<CreateClientResponse> CreateAsync(CreateClientRequest request)
         {
-            var newClient = new Client
-            {
-                Id = Guid.NewGuid(),
-                Name = request.Name,
-                Contact = request.Contact,
-            };
+            if (string.IsNullOrEmpty(request.Name))
+                throw new ArgumentException("Client name cannot be empty");
+
+            if (string.IsNullOrEmpty(request.Contact))
+                throw new ArgumentException("Contact cannot be empty");
+
+            var newClient = new Client(
+                name: request.Name,
+                contact: request.Contact
+            );
 
             await _clientRepository.CreateAsync(newClient).ConfigureAwait(false);
             await _clientRepository.SaveChangesAsync().ConfigureAwait(false);

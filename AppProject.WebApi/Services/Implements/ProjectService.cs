@@ -19,18 +19,25 @@ namespace AppProject.WebApi.Services.Implements
         public async Task<CreateProjectResponse> CreateAsync(CreateProjectRequest request)
         {
             var client = await _clientRepository.GetClientByIdAsync(request.ClientId);
+            if (client == null)
+                throw new KeyNotFoundException($"Client with ID {request.ClientId} not found");
 
-            var newProject = new Project
-            {
-                Id = Guid.NewGuid(),
-                Name = request.Name,
-                ClientId = request.ClientId,
-                StartDate = DateTime.Parse(request.StartDate.ToString()),
-                EndDate = DateTime.Parse(request.EndDate.ToString()),
-                Manager = request.Manager,
-                Director = request.Director,
-                Currency = request.Currency
-            };
+            if (!DateTime.TryParse(request.StartDate.ToString(), out DateTime startDate))
+                throw new ArgumentException("Invalid start date format");
+
+            if (!DateTime.TryParse(request.EndDate.ToString(), out DateTime endDate))
+                throw new ArgumentException("Invalid end date format");
+
+            var newProject = new Project(
+                name: request.Name,
+                manager: request.Manager,
+                director: request.Director,
+                startDate: startDate,
+                endDate: endDate,
+                duration: (endDate - startDate).Days,
+                currency: request.Currency,
+                clientId: request.ClientId
+            );
 
             await _projectRepository.CreateAsync(newProject).ConfigureAwait(false);
             await _projectRepository.SaveChangesAsync().ConfigureAwait(false);
